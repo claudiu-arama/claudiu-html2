@@ -9,6 +9,23 @@
   background-color: $bg;
 }
 
+@mixin circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid red;
+  background-color: purple;
+}
+
+@mixin circle-bg($cbg:teal) {
+  background-color: $cbg;
+}
+
+@mixin circle-border ($bwdth, $bclr) {
+  border-width: $bwdth;
+  border-color: $bclr;
+}
+
 .squares {
   width: 80%;
   border: 1px solid #000;
@@ -34,3 +51,27 @@
   }
 }
 
+.circles {
+  margin: 0 auto;
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+
+  .circle-red {
+    @include circle;
+
+    @include circle-bg(red);
+  }
+
+  .circle-green {
+    @include circle();
+
+    @include circle-bg(green);
+  }
+
+  .circle-blue {
+    @include circle();
+
+    @include circle-bg(blue);
+  }
+}
