@@ -37,7 +37,6 @@
   width: 200px;
   border-radius: 50%;
   border: 3px solid red;
-  background-color: purple;
   background-color: red;
 }
 .circles .circle-green {
@@ -45,7 +44,6 @@
   width: 200px;
   border-radius: 50%;
   border: 3px solid red;
-  background-color: purple;
   background-color: green;
 }
 .circles .circle-blue {
@@ -53,8 +51,15 @@
   width: 200px;
   border-radius: 50%;
   border: 3px solid red;
-  background-color: purple;
   background-color: blue;
+}
+.circles .circle-border-blue {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid red;
+  border-width: 6px;
+  border-color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */

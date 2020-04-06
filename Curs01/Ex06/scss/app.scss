@@ -14,7 +14,6 @@
   width: 200px;
   border-radius: 50%;
   border: 3px solid red;
-  background-color: purple;
 }
 
 @mixin circle-bg($cbg:teal) {
@@ -73,5 +72,11 @@
     @include circle();
 
     @include circle-bg(blue);
+  }
+
+  .circle-border-blue {
+    @include circle();
+  
+    @include circle-border(6px, blue );
   }
 }
