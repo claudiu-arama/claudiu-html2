@@ -1,17 +1,40 @@
-/* Error: Undefined variable.
- *    ,
- * 19 |   margin: $sm $xl;
- *    |               ^^^
- *    '
- *   scss\app.scss 19:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 19 \2502    margin: $sm $xl;\d\a    \2502                ^^^\a    \2575 \a   scss\\app.scss 19:15  root stylesheet";
+body {
+  display: flex;
+  justify-content: space-between;
 }
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+.box-1 {
+  margin-top: 10px;
+  padding-left: 6px;
+}
+
+.box-2 {
+  margin: 32px 64px 8px 64px;
+  padding: 6px;
+}
+
+.box-3 {
+  padding: 30px 0 0 0;
+  border-width: 2px;
+  margin-right: 2px;
+}
+
+.box-4 {
+  margin-top: 32px;
+  border-width: 16px;
+  padding: 25px;
+}
+
+.box-5 {
+  margin: 8px 64px;
+  border-width: 16px;
+  padding: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
