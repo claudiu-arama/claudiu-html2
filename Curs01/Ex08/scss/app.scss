@@ -30,3 +30,39 @@
 
   background-color: purple;
 }
+
+.circles {
+  margin: 0 auto;
+  width: 802px;
+  border: 1px solid #000;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: brown;
+  margin: 20px;
+}
+
+.circle-red {
+
+  @extend .circle;
+
+  background-color: red;
+}
+
+.circle-green {
+  
+  @extend .circle;
+
+  background-color: green;
+}
+
+.circle-blue {
+
+  @extend .circle;
+
+  background-color: blue;
+}
