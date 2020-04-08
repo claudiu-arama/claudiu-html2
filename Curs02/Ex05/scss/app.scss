@@ -16,6 +16,7 @@
   @include shape();
 }
 
+
 .my-diamond {
   @include shape('diamond', 40px);
 
@@ -24,4 +25,45 @@
 
 .my-circle {
   @include shape('circle', 100px);
+}
+
+@mixin order($type: 'next', $size) {
+ 
+  @if $type == 'next' { 
+    width: 0;
+    height: 0;
+    border-top: $size solid transparent;
+    border-left: 2*$size solid red;
+    border-bottom: $size solid transparent;
+  }
+
+  @if $type == 'previous' {
+    width: 0;
+    height: 0;
+    border-top: $size solid transparent;
+    border-right: 2*$size solid red;
+    border-bottom: $size solid transparent;
+  }
+
+  @if $type == "up" {
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: 2*$size solid red;
+  }
+
+  @if $type == "down" {
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: 2*$size solid red;
+  }
+
+}
+
+.arrow-btn {
+
+  @include order('up', 50px);
 }

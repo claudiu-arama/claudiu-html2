@@ -19,4 +19,12 @@
   border-radius: 100px;
 }
 
+.arrow-btn {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
 /*# sourceMappingURL=style.css.map */
