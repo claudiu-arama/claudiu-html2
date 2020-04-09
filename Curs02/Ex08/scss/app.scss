@@ -1,3 +1,10 @@
+
+$borders: dotted, dashed, solid, double, none;
+
+$margins: ('xs': 4px, 'sm': 8px, 'md': 16px, 'lg': 32px);
+
+$paddings: ('xs': 4px, 'sm': 8px, 'md': 16px, 'lg': 32px);
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -8,4 +15,24 @@
   width: 150px;
   height: 150px;
   border: 1px solid #000;
+}
+
+@each $border in $borders {
+  .b-#{$border} {
+    border-style: $border;
+  }
+}
+
+@each $key, $value in $margins {
+  .m-#{$key} {
+    margin: $value;
+
+  }
+}
+
+@each $key, $value in $paddings {
+  .p-#{$key} {
+    padding: $value;
+
+  }
 }
