@@ -20,11 +20,12 @@
 }
 
 .arrow-btn {
+  margin: 0 auto;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
+  border-top: 100px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

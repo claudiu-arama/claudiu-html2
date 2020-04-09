@@ -56,14 +56,16 @@
   @if $type == "down" {
     width: 0;
     height: 0;
-    border-left: $size solid transparent;
-    border-right: $size solid transparent;
-    border-top: 2*$size solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+ 
   }
 
 }
 
 .arrow-btn {
+  margin: 0 auto;
 
-  @include order('up', 50px);
+  @include order('down', 50px);
 }
