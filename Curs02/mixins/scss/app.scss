@@ -1,18 +1,48 @@
-@mixin btn {
-  padding: 20px;
-  background: transparent;
-  border: 1px solid #000;
-  cursor: pointer;
-}
 
 @mixin arrow-left($color:red) {
   width: 0;
   height: 0;
-  border-top: 50px solid transparent;
-  border-right: 100px solid $color;
-  border-bottom: 50px solid transparent;
+  border-top: 5px solid transparent;
+  border-right: 10px solid $color;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+}
+
+@mixin btn($arrow-direction: 'left', $arrow-color: #000) {
+  padding: 20px;
+  background: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
+
+  &::before {
+    @include arrow-left($arrow-color);
+
+    @if $arrow-direction == 'right' {
+      transform: rotate(180deg);
+    }
+    @if $arrow-direction == 'up' {
+      transform: rotate(90deg);
+    }
+    @if $arrow-direction == 'down' {
+      transform: rotate(270deg);
+    }
+    margin-right: 5px;
+    content: '';
+  }
 }
 
 .btn-arrow-left {
-  @include btn;
+  @include btn('left', red);
+}
+
+.btn-arrow-right {
+  @include btn('right', green);
+}
+
+.btn-arrow-up {
+  @include btn('up', blue);
+}
+
+.btn-arrow-down {
+  @include btn('down', magenta);
 }
