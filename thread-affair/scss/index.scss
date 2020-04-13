@@ -1,0 +1,19 @@
+// the gulp server is serving fonts from /fonts, per the gulpfile, see /dist
+// this can be changed if necessary
+$fa-font-path: '/fonts';
+@import './../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import './../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import './../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+
+$theme-colors: (
+  'primary': #ff69b4
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body {
+  color: white;
+  background: rgb(92, 18, 18);
+  height: 400vh;
+}
