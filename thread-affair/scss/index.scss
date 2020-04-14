@@ -6,14 +6,4 @@ $fa-font-path: '/fonts';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/brands';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 
-$theme-colors: (
-  'primary': #ff69b4
-);
-
-@import 'node_modules/bootstrap/scss/bootstrap';
-
-body {
-  color: white;
-  background: rgb(92, 18, 18);
-  height: 400vh;
-}
+@import './../node_modules/bootstrap/scss/bootstrap-reboot';
