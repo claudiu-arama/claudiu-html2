@@ -28,6 +28,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  // transition: opacity 0.5s;
+                                // theory crafting for hack
+  // .menu-open & {
+  //   opacity: 0;
+  // }
 
   & > div {
     position: absolute;
