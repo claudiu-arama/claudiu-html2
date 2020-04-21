@@ -30,7 +30,7 @@
         <div class="user-controls">
           <img src="/img/user-avatar.png" alt="User Avatar">
           <i class="fas fa-chevron-down"></i>
-          <i class="fas fa-bars"></i>   
+          <label class="fas fa-bars" for="hack-menu"></label>   
           <!-- aici ar trebui sa punem clase dar folosim nth-of-type pt scopuri didactice -->
         </div>
         <!-- .user-controls  -->
@@ -51,17 +51,24 @@
     <!-- .header-top  -->
 
     <div class="header-bottom">
-
+                                    <!-- hack here -->
       <div class="nav-container">
-        <nav class="nav-main">
-          <ul>
-            <li><a href="" title="Home">Home</a></li>
-            <li><a href="" title="Costume">Costume</a></li> 
-            <li><a href="" title="Camasi">Camasi</a></li>
-            <li><a href="" title="Accesorii">Accesorii</a></li>
-          </ul>
-        </nav>
-        <!-- .nav-main  -->
+        <form>      
+          <input type="checkbox" 
+            class="hack-menu"
+            id="hack-menu"
+          >
+                                    <!-- hack here -->          
+          <nav class="nav-main">
+            <ul>
+              <li><a href="" title="Home">Home</a></li>
+              <li><a href="" title="Costume">Costume</a></li> 
+              <li><a href="" title="Camasi">Camasi</a></li>
+              <li><a href="" title="Accesorii">Accesorii</a></li>
+            </ul>
+          </nav>
+          <!-- .nav-main  -->
+        </form>
 
         <nav class="nav-secondary">
 
@@ -76,20 +83,24 @@
 
   <main class="content">
     <header class="banner-main">
-      <div>
+      <div class="cont banner-content">
         <h1>Custom Suits</h1>
         <h2>Get back to work in style</h2>
-        <a href="" class="banner-cta">Create your suit</a>  
-        <p>A Tailored Suit that will fit you perfectly is a dream for everybody.</p>  
-        <p>We provide you with the design and you choose if you like it or if you want 
-           to change the details with our online configurator. 
-        </p>
+        
+        <a href="" class="btn btn-main btn-lg">Create your suit</a>  
+        <div class="">
+          <p>A Tailored Suit that will fit you perfectly is a dream for everybody.</p>  
+          <p>We provide you with the design and you choose if you like it or if you want 
+            to change the details with our online configurator. 
+          </p>
+        </div>
       </div>
+
     </header>
     <!-- .banner-main  -->
 
     <main class="content-main">
-      <section class="catalogue-preview">
+      <section class="catalogue-preview cont">
         <h1>All Time <span>BESTSELLERS</span></h1>
         <p>
           Accomplish new achievements with a bold new style from the brilliant collection 
@@ -187,7 +198,7 @@
       </section>
       <!-- .catalogue-preview  -->
 
-      <section class="catalogue-preview">
+      <section class="catalogue-preview cont">
         <h1>New <span>COLLECTION</span></h1>
         <p>
           Accomplish new achievements with a bold new style from the brilliant collection 

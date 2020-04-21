@@ -8,9 +8,13 @@ $fa-font-path: '/fonts';
 
 @import './../node_modules/bootstrap/scss/bootstrap-reboot';
 
+@import './reset';
+
 @import './variables';
 @import './common';
 @import './shared/index';
+@import './homepage/index';
+
 
 
 
