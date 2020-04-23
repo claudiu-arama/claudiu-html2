@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Monochrome</title>
 </head>
 
@@ -18,7 +18,7 @@
         </div>
         <!-- .commercial-info  -->
 
-        <div class="header-social" >
+        <div class="header-social mobile-hidden" >
           <ul>
             <li><i class="fab fa-youtube"></i></li>
             <li><i class="fab fa-twitter"></i></li>
@@ -28,7 +28,7 @@
         </div>
         <!-- .header-social  -->
 
-        <div class="header-contact">
+        <div class="header-contact mobile-hidden">
           <a href="tel:+44 (0)10 2345 6789" title="Call Us">CALL US +44 (0)10 2345 6789</a>
         </div>
         <!-- .header-contact  -->
@@ -41,8 +41,8 @@
           <div class="header-user-controls">
             <a href="" title="menu"><i class="fas fa-bars"></i></a>
             <form action="get" class="search">
-              <input type="search" placeholder="Search">
-              <button type="submit"><i class="fas fa-search"></i></button>
+              <input type="search" placeholder="search">
+              <button class="btn-tertiary" type="submit"><i class="fas fa-search"></i></button>
             </form>
           </div>
           <!-- .header-user-controls  -->
@@ -66,7 +66,7 @@
     <!-- .header-top  -->
 
     <div class="header-bottom">
-      <nav class="nav-main">
+      <nav class="nav-main mobile-hidden">
         <ul>
           <li><a href="" title="new arrivals">new arrivals</a></li>
           <li><a href="" title="brands">brands</a></li>
@@ -78,7 +78,7 @@
       </nav>
       <!-- .nav-main  -->
       <div class="nav-sec">
-        <button type="submit">New In</button>
+        <button class="btn-main" type="submit">New In</button>
       </div>
       <!-- .nav-sec  -->
     </div>
@@ -91,7 +91,8 @@
     <main class="content-main">
 
       <section class="catalogue-preview">
-        <h1>New Stuff</h1>
+        <h1 class="mobile-hidden">New Stuff</h1>
+        <h1>Spring Collection</h1>
         <article class="product-tile">
 
           <a href="" class="product-image-container"
@@ -467,7 +468,7 @@
     <div class="footer-content">
       <div class="footer-contact">
         <a href="tel:+44 (0)10 2345 6789"><i class="fas fa-phone-alt"></i>call us</a>
-        <ul>
+        <ul class="mobile-hidden">
           <li> <a href="tel:+44 (0)10 2345 6789">CALL US <br> +44 (0)10 2345 6789</a></li>
           <li><a href="mailto:email@email.com">EMAIL CUSTOMER CARE</a></li>
           <li><a href="" title="see mobile version" class="mobile-link">see mobile version</a></li>
@@ -477,19 +478,33 @@
 
       <div class="footer-info-links">
         <h1>How can we help?</h1>
-        <ul>
-          <li><a href="" title="Style & Fit Advice">style & fit advice</a></li>
-          <li><a href="" title="Faqs">faqs</a></li>
-          <li><a href="" title="Delivery">delivery</a></li>
-          <li><a href="" title="Exchange & Returns">exchange & returns</a></li>
-        </ul>
+        <div class="footer-info-help">
+          <ul class="footer-menu-separation">
+            <li><a href="" title="Style & Fit Advice">style & fit <span class="mobile-hidden">advice</span></a></li>
+            <li><a href="" title="Faqs">faqs</a></li>
+            <li><a href="" title="Delivery">delivery</a></li>
+            <li><a href="" title="Exchange & Returns"><span class="mobile-hidden">exchange &</span> returns</a></li>
+          </ul>
 
-        <ul>
-          <li><a href="" title="About us">about us</a></li>
-          <li><a href="" title="Careers">careers</a></li>
-          <li><a href="" title="Afflistes">afflistes</a></li>
-          <li><a href="" title="Adverising">adverising</a></li>
-        </ul>
+          <ul>
+            <li><a href="" title="About us">about us</a></li>
+            <li><a href="" title="Careers">careers</a></li>
+            <li><a href="" title="Afflistes">afflistes</a></li>
+            <li><a href="" title="Adverising">adverising</a></li>
+          </ul>
+        </div>
+        <!-- .footer-info-help  -->
+
+        <div class="footer-terms-conditions">
+          <p>
+            <a hre`f="" title="terms & conditions">terms & conditions</a>
+          </p>
+          <p> 
+            <a href="" title="privacy & cookies">privacy & cookies</a>
+          </p>
+        </div>
+        <!-- .footer-terms-conditions  -->
+
       </div>
       <!-- .footer-info-links  -->
 
@@ -497,10 +512,10 @@
         <div class="footer-subscribe">
           <h1>Let's connect</h1>
           <form action="get">
-            <label for="newsletter" class="newsletter-desktop">sign up for our newsletter</label>
+            <label for="newsletter" class="newsletter-desktop mobile-hidden">sign up for our newsletter</label>
             <label for="newsletter" class="newsletter-mobile">Be the first to receive exclusive offers</label>
             <input type="email" id="newsletter" name="newsletter" placeholder="Email">
-            <button type="submit">submit</button>
+            <button class="btn btn-secondary btn-sm" type="submit">submit</button>
           </form>
           <p>
             I agree with the <a href="" target="_blank">Privacy Policy</a> and I want to receive emails from Monochrome
