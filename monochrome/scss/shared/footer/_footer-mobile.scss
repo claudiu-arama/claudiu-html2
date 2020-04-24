@@ -1,20 +1,17 @@
-.mobile-hidden {
-  display: none;
-}
 
 .footer {
   margin: 0 auto;
 }
 
 .footer-content {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   h1 {
     font-family: 'Playfair Display', sans-serif;
     font-size: 22px;
-    line-height: 30px;
+    line-height: 25px;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -22,7 +19,6 @@
 
   input {
     width: 260px;
-    height: 35px;
 
     &::placeholder {
       color: #000;
@@ -40,7 +36,6 @@
     display: block;
   }
 }
-
 
 .footer-contact {
   order: 2;
@@ -64,7 +59,7 @@
   color: #fff;
 
   h1 {
-    margin: 35px;
+    margin: 35px auto 35px auto;
   }
 }
 
@@ -81,17 +76,20 @@
   ul {
     list-style-type: none;
     font-size: 16px;
-    margin: 10px 15px 10px 10px;
+    margin: 0 15px 0 10px;
 
     li {
-      margin-top: 10px;
-
+      display: block;
+      margin: 0 10px 20px 10px;
+      line-height: 25px;
     }
 
+    li:nth-child(4) {
+      margin-bottom: 5px;
+    }
+    
     a {
       color: #fff;
-      margin: 20px 10px 10px 10px;
-      line-height: 30px;
     }
   }
 }
@@ -99,15 +97,16 @@
 .footer-terms-conditions {
   margin: 30px;
 
-  p {
-
-    a {
-      font-size: 14px;
-      color: #fff;
-      text-decoration: underline; 
-    }
+  a {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: underline; 
+    font-style: italic;
   }
 }
+
 .footer-subscribe-social {
   order: 1;
   background-color: $brand-secondary;
@@ -118,7 +117,7 @@
     .newsletter-mobile {
       font-family: 'Roboto', sans-serif;
       font-size: 15px;
-      line-height: 29px;
+      line-height: 20px;
     }
 
     p {
