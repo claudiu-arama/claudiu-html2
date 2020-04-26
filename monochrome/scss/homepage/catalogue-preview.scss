@@ -1,0 +1,57 @@
+.catalogue-preview {
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+
+  h1 {
+    padding-top: 10px;
+    margin: 0 auto 10px auto;
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 1px solid $brand-hr;
+    line-height: 24px;
+  }
+
+  .catalogue-showcase-products {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.product-tile {
+  position: relative;
+
+  .product-image {
+    width: 148px;
+    height: 148px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: relative;
+      left: -7px;
+      max-height: 100%;
+    }
+  }
+
+  .product-wishlist {
+    position: absolute;
+    top: 3px;
+    right: 11px;
+  }
+}
+
+.product-information {
+  color: $brand-main;
+  margin-top: 10px;
+
+  .product-title {
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .product-price {
+    font-size: 15px;
+  }
+}
+
