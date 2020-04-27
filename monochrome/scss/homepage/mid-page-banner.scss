@@ -1,0 +1,30 @@
+.mid-page-banner {
+  font-family: 'Playfair Display', sans-serif;
+  
+  .promo-banner {
+    height: 175px;
+    overflow: hidden;
+    margin: 25px auto;
+
+    img {
+      max-width: 100%;
+      position: relative;
+      top: -70px;
+    }
+  }
+}
+
+.promo-text {
+
+  h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 32px;
+  }
+}
+

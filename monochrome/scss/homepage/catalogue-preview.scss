@@ -3,6 +3,22 @@
   text-align: center;
   font-family: 'Playfair Display', sans-serif;
 
+  .view-all {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: lowercase;
+    line-height: 14px;
+    padding: 9px 20px;
+    border: 1px solid $brand-main;
+  }
+
+  .view-all:hover {
+    background-color: $brand-main;
+    color: #fff;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+  }
+
   h1 {
     padding-top: 10px;
     margin: 0 auto 10px auto;
@@ -27,6 +43,7 @@
     overflow: hidden;
     position: relative;
 
+
     img {
       position: relative;
       left: -7px;
@@ -38,6 +55,7 @@
     position: absolute;
     top: 3px;
     right: 11px;
+    cursor: pointer;
   }
 }
 
@@ -54,4 +72,5 @@
     font-size: 15px;
   }
 }
+
 
