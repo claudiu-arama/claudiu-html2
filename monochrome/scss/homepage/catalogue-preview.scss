@@ -20,7 +20,7 @@
   }
 
   h1 {
-    padding-top: 10px;
+    padding-top: 8px;
     margin: 0 auto 10px auto;
     font-weight: 700;
     font-size: 18px;
@@ -36,17 +36,17 @@
 
 .product-tile {
   position: relative;
+  margin-bottom: 35px;
 
   .product-image {
-    width: 148px;
+     width: 148px;
     height: 148px;
     overflow: hidden;
-    position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
-      position: relative;
-      left: -7px;
       max-height: 100%;
     }
   }
