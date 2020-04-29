@@ -69,3 +69,31 @@
 .flex-container-03 .flex-item:nth-of-type(2) {
   align-self: flex-start;
 }
+
+.flex-container-04 {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.flex-container-04 :last-child {
+  align-self: center;
+}
+
+.flex-container-05 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container-05 #flex-item-3 {
+  align-self: stretch;
+  height: auto ;
+}
+
+.flex-container-06 {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.flex-container-06 .flex-item-mobile {
+  align-self: flex-end;
+}
