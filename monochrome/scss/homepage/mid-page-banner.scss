@@ -5,11 +5,12 @@
     height: 175px;
     overflow: hidden;
     margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
       max-width: 100%;
-      position: relative;
-      top: -70px;
     }
   }
 }

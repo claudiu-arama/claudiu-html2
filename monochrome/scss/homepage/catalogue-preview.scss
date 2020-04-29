@@ -39,7 +39,8 @@
   margin-bottom: 35px;
 
   .product-image {
-     width: 148px;
+    flex-basis: 148px;
+    max-width: 148px;
     height: 148px;
     overflow: hidden;
     display: flex;
