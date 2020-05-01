@@ -61,3 +61,35 @@
 .flex-container-03 :nth-child(4) {
   order: 1;
 }
+
+.flex-container-04 {
+  flex-direction: row-reverse;
+}
+
+.flex-container-04 :nth-of-type(2) {
+  order: 1;
+}
+
+.flex-container-04 :nth-of-type(3) {
+  order: 2;
+} 
+
+.flex-container-05 {
+  flex-direction: row-reverse;
+}
+
+.flex-container-05 :nth-of-type(2) {
+  order: 3;
+}
+
+.flex-container-05 :nth-of-type(3) {
+  order: 1;
+}
+
+.flex-container-05 :nth-of-type(5) {
+  order: 2;
+}
+
+.flex-container-06 :nth-of-type(3) {
+  order: -1;
+}

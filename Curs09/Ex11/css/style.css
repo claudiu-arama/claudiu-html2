@@ -76,3 +76,34 @@ body {
   order: 1;
 }
 
+.flex-container-04 {
+  flex-direction: column;
+}
+
+.flex-container-04 :nth-of-type(3) {
+  order: -1;
+}
+
+.flex-container-04 :nth-of-type(4) {
+  order: 1;
+}
+
+.flex-container-05 {
+  flex-direction:column-reverse;
+}
+
+.flex-container-05 :nth-of-type(2) {
+  order: 2;
+}
+
+.flex-container-05 :nth-of-type(4) {
+  order: -1;
+}
+
+.flex-container-06 {
+  flex-direction: column;
+}
+
+.flex-container-06 :nth-of-type(3) {
+  order: -1;
+}
