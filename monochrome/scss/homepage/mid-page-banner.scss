@@ -4,7 +4,7 @@
   .promo-banner {
     height: 175px;
     overflow: hidden;
-    margin: 25px auto;
+    margin: 32px auto 26px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +20,7 @@
   h1 {
     font-size: 18px;
     line-height: 24px;
+    font-weight: 700;
   }
 
   p {

@@ -1,0 +1,39 @@
+
+.product-tile {
+  position: relative;
+
+  .product-image {
+    flex-basis: 148px;
+    max-width: 148px;
+    height: 148px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  .product-wishlist {
+    position: absolute;
+    top: 3px;
+    right: 11px;
+    cursor: pointer;
+  }
+}
+
+.product-information {
+  color: $brand-main;
+  margin-top: 10px;
+
+  .product-title {
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .product-price {
+    font-size: 15px;
+  }
+}

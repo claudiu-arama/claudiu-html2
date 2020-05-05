@@ -7,6 +7,8 @@ $fa-font-path: '/fonts';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import './../node_modules/bootstrap/scss/bootstrap-reboot';
 
+@import './../node_modules/bootstrap/scss/bootstrap';
+
 @import './reset';
 
 @import './variables';
@@ -14,9 +16,5 @@ $fa-font-path: '/fonts';
 @import './shared/index';
 @import './homepage/index';
 @import './category/index';
-
-.mobile-hidden {
-  display: none;
-}
 
 
