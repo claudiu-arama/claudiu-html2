@@ -28,7 +28,7 @@
         <div class="input-group mb-2">
           <div class="input-group-prepend">
             <label for="name" class="input-group-text">
-              Numele Retetei *
+              Numele retetei *
             </label>
           </div>
 
@@ -44,7 +44,7 @@
         <div class="input-group mb-2">
           <div class="input-group-prepend">
             <label for="long-description" class="input-group-text">
-              Descriere Lunga *
+              Descriere lunga *
             </label>
           </div>
             <textarea 
@@ -60,7 +60,7 @@
       <div class="input-group mb-2">
         <div class="input-group-prepend">
           <label for="short-description" class="input-group-text">
-            Descriere Scurta *
+            Descriere scurta *
           </label>
         </div>
         <textarea 
@@ -77,7 +77,7 @@
       <div class="col-12 col-md-6">
         <div class="custom-file mb-2">
           <label for="custom-file" class="custom-file-label">
-            Imagine Principala *
+            Imagine principala *
           </label>
           <input 
             type="file" 
@@ -123,7 +123,7 @@
           >
           <label for="author-switch" 
             class="custom-control-label"
-          >Adauga Autor</label>
+          >Adauga autor</label>
         </div>
       </div>
     </div>
@@ -135,7 +135,6 @@
           <div class="input-group-prepend">
             <label for="author-name" 
               class="input-group-text"
-              required
             >Numele autorului *</label>
           </div>
           <input type="text"
@@ -246,6 +245,78 @@
 
     </div>
     <!-- /.row  -->
+
+    <div class="row">
+      <div class="col">
+        <h2>Pasi</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="step-title" class="input-group-text">
+              Titlu pas *
+            </label>
+          </div>
+          <input type="text" 
+            class="form-control"
+            id="step-title"
+            placeholder="Titlu pas *"
+            required
+          >
+        </div>
+      <!-- /step-title  -->
+
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <label for="step-subtitle" 
+            class="input-group-text"
+          >Subtitlu pas *
+          </label>
+        </div>
+        <input type="text" 
+          id="step-subtitle"
+          class="form-control"
+          placeholder="Subtitul pas *"
+          required
+        >
+      </div>
+      <!-- /step-subtitle  -->
+
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <label for="step-description" 
+            class="input-group-text"
+          >Descriere pas *
+          </label>
+        </div>
+        <textarea 
+          id="step-description" 
+          rows="10" 
+          class="form-control"
+          placeholder="Descriere pas*"
+          requireds
+        ></textarea>
+      </div>
+      <!-- /step-description  -->
+
+      <div class="col text-right mb-4">
+        <button class="btn btn-outline-danger btn-md"
+          type="reset"
+        >Reseteaza
+        </button>
+        <button class="btn btn-primary btn-md"
+          type="submit"
+        >Adauga pas
+        </button>
+      </div>
+      <!-- /textarea - step - buttons  -->
+      </div>
+    </div>
+    <!-- /.row  -->
+
 
     <div class="row">
       <div class="col text-center">
