@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Curs05-Ex15</title>
+</head>
+<body>
+  <form class="container mb-4 mt-4 ">
+    <div class="row">
+      <div class="col">
+        <h1 class="font-weight-bold">Formular Produs</h1>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col">
+        <h3>Produs</h3>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+
+        <div class="custom-file mb-2">
+          <input type="file"
+            class="custom-file-input" 
+            id="main-image"
+          >
+
+          <label class="custom-file-label" 
+            for="main-image" 
+            data-browse="Frunzareste">Imagine principala *</label>
+        </div>
+        <!-- /.main-image  -->
+
+          <div class="input-group mb-2">
+
+            <div class="input-group-prepend">
+              <label for="category" 
+                class="input-group-text"
+              >Categorie *</label>
+            </div>
+
+            <select id="category" 
+              class="form-control"
+              required
+            >
+              <option value="">--categorie--</option>
+              <option value="">Lorem Ipsum</option>
+              <option value="">Lorem Ipsum</option>
+              <option value="">Lorem Ipsum</option>
+            </select>
+          </div>
+          <!-- /category  -->
+
+          <div class="input-group mb-2">
+
+            <div class="input-group-prepend">
+              <label for="brand" 
+                class="input-group-text"
+              >Brand
+              </label>
+            </div>
+
+            <select 
+              id="brand" 
+              class="form-control"
+            >
+              <option value="">--brand--</option>
+              <option value="">Lorem Ipsum</option>
+              <option value="">Lorem Ipsum</option>
+              <option value="">Lorem Ipsum</option>
+            </select>
+          </div>
+          <!-- /brand  -->
+
+
+        <div class="input-group mb-2">
+
+          <div class="input-group-prepend">
+            <label for="supplier" 
+              class="input-group-text"
+            >Furnizor</label>
+          </div>
+
+          <select id="supplier" 
+            class="form-control"
+          >
+            <option value="">--furnizor--</option>
+            <option value="">Lorem Ipsum</option>
+            <option value="">Lorem Ipsum</option>
+            <option value="">Lorem Ipsum</option>
+        </select>
+        </div>
+        <!-- /supplier  -->
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+
+          <div class="input-group-prepend">
+            <label for="product-name" 
+              class="input-group-text"
+            >Numele produsului *</label>
+          </div>
+
+          <input type="text" 
+            class="form-control"
+            id="product-name"
+            placeholder="Numele produsului *"
+            required
+          >
+        </div>
+        <!-- /product-name  -->
+
+        <div class="input-group mb-2">
+
+          <div class="input-group-prepend">
+            <label for="long-description" 
+              class="input-group-text"
+            >Descriere lunga *</label>
+          </div>
+
+          <textarea 
+            id="long-description" 
+            rows="6" 
+            class="form-control"
+            placeholder="Descriere lunga *"
+            required
+          ></textarea>
+        </div>
+        <!-- /long-description  -->
+
+        <div class="input-group mb-2">
+
+          <div class="input-group-prepend">
+            <label for="short-description" 
+              class="input-group-text"
+            >Descriere scurta *</label>
+          </div>
+
+          <textarea 
+            id="short-description" 
+            rows="5" 
+            class="form-control"
+            placeholder="Descriere scurta *"
+            required
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col mb-4 mt-4">
+        <h3>Pret</h3>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" 
+            class="custom-control-input"
+            id="customCheck-price"
+          >
+          <label for="customCheck-price" 
+            class="custom-control-label"
+          >Afiseaza oferta pe produs</label>
+        </div>
+        <!-- /product offer checkbox  -->
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="price" 
+              class="input-group-text"
+            >Pret *</label>
+          </div>
+
+          <input type="text" 
+            class="form-control"
+            id="price"
+            placeholder="Pret *"
+            required
+          >
+        </div>
+        <!-- /price  -->
+
+      </div>
+
+      <div class="col-12 col-md-6">
+        
+        <div class="custom-control custom-checkbox mb-2">
+          <input type="checkbox" 
+            class="custom-control-input"
+            id="customCheck-discount-price"
+          >
+          <label for="customCheck-discount-price" 
+            class="custom-control-label"
+          >Afiseaza pret redus</label>
+        </div>
+        <!-- /discount price checkbox  -->
+
+        <div class="input-group mb-4">
+          <div class="input-group-prepend">
+            <label for="discount-price" 
+              class="input-group-text"
+            >Pret redus</label>
+          </div>
+          <input type="text"
+            class="form-control"
+            id="discount-price"
+            placeholder="Pret redus">
+        </div>
+        <!-- /discount price  -->
+      </div>
+ 
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col">
+        <h3>Brand(Optional)</h3>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col mb-2">
+        <div class="custom-control custom-switch">
+          <input type="checkbox" 
+            class="custom-control-input"
+            id="add-brand"
+          >
+          <label for="add-brand" 
+            class="custom-control-label"
+          >Adauga brand</label>
+        </div>
+        <!-- /add brand checkbox  -->
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="brand-name" 
+              class="input-group-text"
+            >Nume brand</label>
+          </div>
+          <input type="text" 
+            class="form-control"
+            id="brand-name"
+            placeholder="Nume brand"
+          >
+        </div>
+        <!-- /brand name  -->
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="brand-description" 
+              class="input-group-text"
+            >Descriere brand</label>
+          </div>
+          <textarea 
+            id="brand-description" 
+            rows="5" 
+            class="form-control"
+            placeholder="Descriere brand"
+          ></textarea>
+        </div>
+        <!-- /brand-description  -->
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="brand-address" 
+              class="input-group-text"
+              >Adresa brand</label>
+          </div>
+          <textarea 
+            id="brand-address" 
+            rows="5" 
+            class="form-control"
+            placeholder="Adresa brand"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col mt-4">
+        <h3>Furnizor(Optional)</h3>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col">
+        <div class="custom-control custom-switch mb-2">
+          <input type="checkbox" 
+            class="custom-control-input"
+            id="supplier-checkbox"
+          >
+          <label for="supplier-checkbox"
+            class="custom-control-label"
+          >Adauga furnizor</label>
+        </div>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="supplier-name" 
+              class="input-group-text"
+            >Nume furnizor</label>
+          </div>
+          <input type="text"
+            class="form-control"
+            id="supplier-name"
+            placeholder="Nume furnizor"
+          >
+        </div>
+        <!-- /supplier name  -->
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="supplier-description" 
+              class="input-group-text"
+            >Descriere furnizor</label>
+          </div>
+          <textarea 
+            id="supplier-description" 
+            rows="5" 
+            class="form-control"
+            placeholder="Descriere furnizor"
+          ></textarea>
+        </div>
+        <!-- /supplier description  -->
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="supplier-address" 
+              class="input-group-text"
+            >Adresa furnizor</label>
+          </div>
+          <textarea id="supplier-address" 
+            rows="5" 
+            class="form-control"
+            placeholder="Adresa furnizor"
+          ></textarea>
+        </div>
+      </div>
+      <!-- /supplier address  -->
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col text-center">
+        <button class="btn btn-outline-danger btn-lg"
+          type="reset"
+        >Reseteaza tot</button>
+        <button class="btn btn-info btn-lg"
+          type="submit"
+        >Salveaza produs</button>
+      </div>
+    </div>
+
+  </form>
+  <!-- /.form  -->
+</body>
+</html>
