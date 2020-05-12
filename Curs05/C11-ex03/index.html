@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container my-4">
+    <h1 class="text-left text-capitalize">super simple website</h1>
+
+    <h3 class="text-center my-4">Welcome to our HTML website.</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+
+  <form class="row my-4">
+    <div class="col-12 col-md-6 my-4">
+      <h2 class="text-center text-md-left">Login to our website</h2>
+      <div class="form-group row">
+        <label for="user-email" 
+          class="col-md-4 col-form-label"
+        >*Email</label>
+        <div class="col-md-8">
+          <input type="email" 
+            class="form-control"
+            id="user-email"
+            placeholder="Email"
+            required
+          >
+        </div>
+      </div>
+      <!-- /. user-email -->
+
+      <div class="form-group row">
+        <label for="user-password" 
+          class="col-md-4 col-form-label"
+        >*Password</label>
+        <div class="col-md-8">
+          <input type="password"
+            class="form-control"
+            id="user-password"
+            placeholder="Password"
+            required
+          >
+        </div>
+      </div>
+      <!-- /. user-password -->
+
+      <div class="form-group">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" 
+            class="custom-control-input"
+            id="remember-me"
+            checked
+          >
+          <label for="remember-me"
+            class="custom-control-label"
+          >Remember me?</label>
+        </div>
+      </div>
+      <!-- / remember-me checkbox -->
+
+      <div class="col-4">
+        <button  type="submit"
+          class="btn btn-primary btn-md btn-block">Login</button>
+      </div>
+
+    </div>
+
+    <div class="col-md-6 my-4">
+      <h2 class="text-center text-md-left">Or try these fancier places:</h2>
+      <p class="text-center text-md-left">Note that links will open in new windows.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="https://www.google.com/" target="_blank">https://www.google.com/</a></li>
+        <li class="list-group-item"><a href="https://www.facebook.com/" target="_blank">https://www.facebook.com/</a></li>
+        <li class="list-group-item"><a href="https://www.linkedin.com/" target="_blank">https://www.linkedin.com/ </a></li>
+      </ul>
+
+    </div>
+
+  </form>
+
+</div>
+<!-- /.container -->
+
+</body>
+</html>
