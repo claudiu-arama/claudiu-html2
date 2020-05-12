@@ -6,18 +6,40 @@
   text-align: center;
   margin: 0 0 50px 0;
 
+  @include media-breakpoint-up('md') {
+    background: url('/img/banners/banner-01.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left;
+  }
+
   h1 {
     font-size: 49px;
     line-height: 50px;
+
+    @include media-breakpoint-up('md') {
+      font-size: 75px;
+      font-weight: bold;
+      line-height: 77px;
+    }
   }
 
   h2 {
     font-size: 27px;
     line-height: 30px;
+
+    @include media-breakpoint-up('md') {
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 45px;
+    }
   }
 
   p {
     margin-bottom: 24px;
+
+    @include media-breakpoint-up('md') {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -28,14 +50,40 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  // transition: opacity 0.5s;
+  transition: opacity 0.5s;
                                 // theory crafting for hack
-  // .menu-open & {
-  //   opacity: 0;
-  // }
+
+  @include media-breakpoint-up('md') {
+    align-items: flex-start;
+
+    .btn-main {
+      color:$brand-main;
+      background-color: transparent;
+      border: 2px solid $brand-main;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $brand-main;
+        color: $white;
+      }
+    }
+  }
+  
+  .menu-open & {
+    opacity: 0;
+  }
+
+  
+
+
+
 
   & > div {
     position: absolute;
     bottom: 0;
+
+    @include media-breakpoint-up('md') {
+      bottom: 16px;
+    }
   }
 }

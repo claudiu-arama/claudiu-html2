@@ -11,7 +11,7 @@
 
   <header class="header">
     
-    <div class="header-top cont">
+    <div class="header-top cont mt-md-3">
       <div class="header-contact">
         <p> <i class="fas fa-phone-alt"></i>
           <a href="tel:1-877-666-1840"> Toll Free 1-877-666-1840 </a>
@@ -29,13 +29,13 @@
 
         <div class="user-controls">
           <img src="/img/user-avatar.png" alt="User Avatar">
-          <i class="fas fa-chevron-down"></i>
-          <label class="fas fa-bars" for="hack-menu"></label>   
+          <i class="fas fa-chevron-down d-md-inline-block"></i>
+          <label class="fas fa-bars d-md-none" for="hack-menu"></label>   
           <!-- aici ar trebui sa punem clase dar folosim nth-of-type pt scopuri didactice -->
         </div>
         <!-- .user-controls  -->
 
-        <div class="cart">
+        <div class="cart d-md-inline-block">
           <a href="" title="Cart"><i class="fas fa-shopping-cart"></i></a>
         </div>
         <!-- .cart-->
@@ -43,7 +43,7 @@
       </div>
       <!-- .header-control  -->
 
-      <a href="" class="logo" title="Thread Affair">
+      <a href="" class="logo m-auto" title="Thread Affair">
         <img src="/img/logo.jpg" alt="Thread Affair - Logo">
       </a>
 
@@ -85,7 +85,7 @@
     <header class="banner-main">
       <div class="cont banner-content">
         <h1>Custom Suits</h1>
-        <h2>Get back to work in style</h2>
+        <h2 class="mb-md-3">Get back to work in style</h2>
         
         <a href="" class="btn btn-main btn-lg">Create your suit</a>  
         <div class="">
@@ -101,7 +101,7 @@
 
     <main class="content-main">
       <section class="catalogue-preview cont">
-        <h1>All Time <span>BESTSELLERS</span></h1>
+        <h1>All Time <span>Bestsellers</span></h1>
         <p>
           Accomplish new achievements with a bold new style from the brilliant collection 
           of men’s designer suits.
@@ -305,7 +305,7 @@
 
       <section class="home-social cont">
         <h1>We are <span>SOCIAL!</span></h1>
-        <ul class="social-icons">
+        <ul class="social-icons mx-md-auto my-md-4">
           <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
           <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -317,20 +317,20 @@
 
       <section class="home-stores cont">
         <h1>Our <span>Stores</span></h1>
-        <div class="stores-long-description">
-          <p>
+        <div class="stores-long-description d-md-block">
+          <p class="text-center mb-2">
             Accomplish new achievements with a bold new style from the brilliant collection 
             of men’s designer suits.
           </p>
   
-          <p>
+          <p class="text-center mb-2">
             For the finest custom tailored experience, be sure to explore our selection of premium fabrics 
             from one of the world's oldest fabric mills, Vitale Barberis Canonico.
           </p>
         </div>
         <!-- .stores-long-description  -->
 
-        <div class="stores-short-description">
+        <div class="stores-short-description d-md-none">
           <img src="https://via.placeholder.com/280x165.jpg" 
             alt="stores"
           >
@@ -350,7 +350,7 @@
 
       <section class="home-newsletter">
         <form action="" class="form-newsletter cont">
-          <label for="field-newsletter">subscribe to our <span>newsletter</span></label>
+          <label for="field-newsletter">subscribe to our <span class="d-md-block">newsletter</span></label>
           <input type="text" 
             id="field-newsletter" 
             name="field-newsletter"
