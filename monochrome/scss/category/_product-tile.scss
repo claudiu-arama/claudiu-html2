@@ -1,18 +1,18 @@
-
 .product-tile {
   position: relative;
 
   .product-image {
-    flex-basis: 148px;
-    max-width: 148px;
-    height: 148px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     img {
-      max-height: 100%;
+      max-width: 148px;
+
+      @include media-breakpoint-up('md') {
+        max-width: 210px;
+      }
+
+      @include media-breakpoint-up('lg') {
+        max-width: 321px;
+      }
     }
   }
 
@@ -21,6 +21,10 @@
     top: 3px;
     right: 11px;
     cursor: pointer;
+
+    i {
+      font-size: 18px;
+    }
   }
 }
 

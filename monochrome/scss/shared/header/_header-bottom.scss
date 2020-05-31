@@ -7,6 +7,9 @@
     background: $brand-main;
     text-align: center;
 
+    @include media-breakpoint-up('lg') {
+      display: none;
+    }
 
     img {
       width: 100%;
@@ -23,6 +26,10 @@
   top: 258px;
   right: 35px;
 
+  @include media-breakpoint-up('sm') {
+    display: none;
+  }
+
   a {
     font-size: 10px;
     line-height: 13px;
@@ -31,4 +38,39 @@
     text-transform: uppercase;
     color: $brand-main;
   }
+}
+
+.nav-main {
+  display: none;
+
+  @include media-breakpoint-up('lg') {
+    display: block;
+    background-color: $brand-main;
+    text-transform: uppercase;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 15px;
+    z-index: 3;
+  
+    ul {
+
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        display: inline-block;
+       
+        a {
+          color: $brand-secondary;
+          font-family: 'Playfair Display';
+          font-size: 19px;
+        }
+      }
+    }
   }
+}

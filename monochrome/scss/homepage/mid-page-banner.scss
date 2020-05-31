@@ -9,6 +9,11 @@
     align-items: center;
     justify-content: center;
 
+    @include media-breakpoint-up('md'){
+      height: inherit;
+      margin: 0 auto;
+    }
+
     img {
       max-width: 100%;
     }
