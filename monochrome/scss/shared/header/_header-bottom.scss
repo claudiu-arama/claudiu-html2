@@ -52,8 +52,8 @@
     position: -ms-sticky;
     position: -o-sticky;
     position: sticky;
-    top: 15px;
-    z-index: 3;
+    top: 0px;
+    z-index: 4;
   
     ul {
 
@@ -61,14 +61,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 52px;
 
       li {
         display: inline-block;
+
        
         a {
           color: $brand-secondary;
           font-family: 'Playfair Display';
           font-size: 19px;
+
         }
       }
     }

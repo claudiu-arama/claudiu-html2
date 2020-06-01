@@ -102,6 +102,7 @@
     margin-bottom: 2px;
 
     @include media-breakpoint-up('lg') {
+      margin: 0;
       order: 3;
       width: 100%;
     }
