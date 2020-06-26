@@ -44,6 +44,7 @@
         display: inline-block;
         margin-right: 30px;
         color: #fff;
+        font-size: 20px;
       }
     }
   }
@@ -55,7 +56,7 @@
 
   @include media-breakpoint-up('lg') {
     display: block;
-    margin-top: 43px;
+    margin-top: 46px;
     margin-right: 246px;
     font-family: 'Playfair Display';
     
@@ -113,7 +114,7 @@
       li {
         display: inline-block;
         font-size: 22px;
-        margin-left: 24px;
+        margin-right: 24px;
 
         @include media-breakpoint-up('lg') {
           font-size: 26px;
